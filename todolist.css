@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --border-no-one : 1.5px solid rgb(226, 226, 226);
+    
+  }
+
+body{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    
+}
+
+.subtitle, .title{
+    margin: 0;
+    padding: 0;
+    
+}
+.subtitle{
+    
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+}
+.title{
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.adding-card{
+    
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;
+    white-space: nowrap;
+    text-align: center;
+    width: 17rem;
+    row-gap: 0.4rem;
+    min-height: 6rem;
+    border: none;
+
+}
+
+
+
+.icon-input-btn{
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border: var(--border-no-one) ;
+    border-right: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.task-input-and-icon-container{
+    display: flex;
+    justify-content: start;
+    
+
+}
+
+.text-input{
+    position: relative;
+    width:100%;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border: var(--border-no-one);
+    border-left: none;
+    
+    
+    
+}
+
+.date-input{
+    min-width:6.5rem ;
+    margin-right: 0.35rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border: var(--border-no-one);
+    border-left: none;
+    cursor: pointer;
+    
+}
+
+.time-input{
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border: var(--border-no-one);
+    border-left: none;
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+.date-and-time-input-container{
+    display: flex;
+}
+
+.add-btn{
+    border: none;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+
+
+.setting{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.1rem;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    
+    
+}
+
+.clear-all, .dark-mode{
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.6rem;
+    width: auto;
+    border: var(--border-no-one);
+    border-radius: 0.4rem;
+
+}
+
+.todolist-container{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.each-task-container{
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    margin-top: 1rem;
+    justify-content: space-around;
+    width: 16rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+
+.task-and-date-container{
+    display: flex;
+    
+    flex-direction: column;
+    
+}
+
+.task-parg{
+margin: 0;
+font-weight: 500;
+margin-bottom: 0.3rem;
+}
+
+.date-parg{
+    font-size: 0.7rem;
+    margin: 0;
+    color: grey;
+    
+}
+
+.checkbox{
+    margin: 0;
+    padding: 0;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.del-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: rgb(179, 179, 179);
+    font-size: larger;
+}
+
+
+.icon{
+    
+    width: 17px;
+    fill: #3c3c3c;
+}
+
+.icon-tick{
+    fill: #484848;
+}

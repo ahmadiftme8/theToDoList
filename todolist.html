@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <title>Todo List</title>
+</head>
+<body class="body">
+    <h1 class="title">TODO</h1>
+    <P class="subtitle">REMIND EVERTHING!</P>
+    
+
+    <div class="adding-card">
+        <div class="task-input-and-icon-container">
+            <button class="icon-input-btn">
+
+                <svg class="icon-tick" xmlns="http://www.w3.org/2000/svg" width="24" height="24" baseProfile="tiny" version="1.2" viewBox="0 0 27 27" id="tick"><path d="M16.972 6.251a1.999 1.999 0 0 0-2.72.777l-3.713 6.682-2.125-2.125a2 2 0 1 0-2.828 2.828l4 4c.378.379.888.587 1.414.587l.277-.02a2 2 0 0 0 1.471-1.009l5-9a2 2 0 0 0-.776-2.72z"></path></svg>
+
+            </svg>
+
+            </button>
+            <input class="text-input" type="text" name="Task" placeholder="Add Task...">
+
+        </div>
+        
+        <div class="date-and-time-input-container">
+            <button class="icon-input-btn">
+
+                <svg class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                
+                    <path d="M34 24H24v10h10V24zM32 2v4H16V2h-4v4h-2c-2.21 0-3.98 1.79-3.98 4L6 38c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4h-2V2h-4zm6 36H10V16h28v22z"></path><path fill="none" d="M0 0h48v48H0z"></path>
+    
+                </svg>
+
+            </button>
+            <input class="date-input" type="date">
+            <button class="icon-input-btn">
+                CO
+                    <!-- here svg -->
+
+            </button>
+            <input class="time-input" type="time">
+        </div>
+        
+        
+        <button class="add-btn"><!-- &plus; -->Add</button>
+    </div>
+    
+    <!-- <button class="setting-btn">
+        ...
+    </button> -->
+
+    <div class="todolist-container">
+
+    </div>
+    
+
+
+    <script src="todolist.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practic todo</title>
+</head>
+<body>
+    <input type="text" class="input">
+    <button class="btn">add</button>
+    <div class="todolist"></div>
+
+    <script>
+let btnElement = document.querySelector('.btn');
+let inputElement = document.querySelector('.input');
+let divElement = document.querySelector('.todolist');
+
+let todolist = ['washing', 'studing'];
+
+function alertUser(){
+    if(inputElement.value ===''){
+        alert('enter a task');
+    }
+    
+}
+
+function createTodoList(){
+    if(inputElement.value !== ''){
+        task = inputElement.value;
+        todolist.push(task);
+        return todolist;
+    }
+   
+}
+
+function renderTasks(){
+    let todoHTML = '';
+
+    for(let i =0; i<todolist.length; i++){
+        let task= todolist[i]
+   let html =`<p>${task}</p>`
+   todoHTML= todoHTML + html;
+   divElement.innerHTML = todoHTML;
+    }
+  
+
+}
+
+
+
+btnElement.addEventListener('click', function(){
+    alertUser();
+    console.log(createTodoList());
+    renderTasks();
+    
+    inputElement.value ='';
+
+    
+})
+
+
+
+    </script>
+</body>
+</html>
