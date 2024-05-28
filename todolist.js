@@ -57,9 +57,7 @@ function settingElementsStuff(){
 
 
 
-todoList = JSON.parse(localStorage.getItem('todolist')) || [{
-    
-}] ;
+todoList = JSON.parse(localStorage.getItem('todolist'));
 
 
 
